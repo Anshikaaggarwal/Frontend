@@ -1,0 +1,304 @@
+* {
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+    /* border box means padding jo hogi vo inside border hogi(content ke andar) outside border nai */
+
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f110f;
+    color: aliceblue;
+    display: flex;
+    /* taki sari cheezein start coming on same horizontal line isliye flex display */
+    align-items: center;
+    /*aligning items center so that upar vali axis ke through items come in center like verical line 
+     me bhi they come in center */
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 2px solid white;
+}
+
+/*  box 2- deliver to location vala box*/
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+
+.address-first {
+    color: #ccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
+
+/* adding font size in terms of rem so that it becomes a bit responsive as well*/
+.address-second {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+/*  box 3- search box*/
+.nav-search {
+    display: flex;
+    align-items: center;
+    /*  vertically centers the text*/
+    background-color: rgb(184, 160, 39);
+    justify-content: space-evenly;
+    /*we want everything to be evenly spread so space evenly*/
+    width: 630px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.nav-search:hover {
+    border: 2px solid orange
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /*as we don't want a curved area in right side*/
+    border: none;
+}
+
+.search-input {
+    width: 100%;
+    /* jo bhi khali bacha areA h that will be occupied by search bar*/
+    height: 35px;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-icon {
+    width: 30px;
+    border: none;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    /*horizontally centers the content*/
+    display: flex;
+    font-size: 1.25rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: black;
+}
+
+/*box4*/
+span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+/*box 6 */
+.nav-cart i {
+    font-size: 100%;
+    height: 10px;
+    align-items: center;
+}
+
+.nav-cart {
+    font-size: 0.85rem;
+    font-weight: 700;
+    align-items: center;
+}
+
+.panel {
+    display: flex;
+    height: 40px;
+    background-color: #222f3d;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-ops {
+    width: 70%;
+
+    font-size: 0.85 rem;
+}
+
+.panel-deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.hero-section {
+    background-image: url(hero_image.jpg);
+    height: 400px;
+
+    /*     background-position: center top; Position the image at the center vertically and at the top horizontally */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.hero-msg {
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    /*vertically alignment ke liye*/
+    align-items: center;
+    /*vertically center*/
+    justify-content: center;
+    /*horizontally center*/
+    margin-bottom: 35px;
+}
+
+.hero-msg a {
+    color: #0071;
+    font-size: 0.85rem;
+    /*14 px relatively*/
+}
+
+/*shop section*/
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box {
+    height: 100px;
+    /*border: 2px solid black;*/
+    width: 23%;
+    height: 400px;
+    background-color: white;
+    padding: 20px 0px 15px;
+    /*top, right, bottom, and left padding */
+}
+
+.box-img {
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.box-content {
+    margin-left: 1rem;
+    /*16px root */
+    margin-right: 1rem;
+    color: #007185;
+}
+
+
+footer {
+    margin-top: 15px;
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    /*to center the text*/
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foot-panel1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul a {
+    display: block;
+    /*they come under single line vertically*/
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-panel2 ul {
+    margin-top: 20px;
+
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url("amazon_logo.png");
+    height: 50px;
+    background-size: cover;
+    width: 100px;
+}
+
+.foot-panel4 {
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages {
+    font-size: 0.75rem;
+    padding-top: 25px;
+}
+
+.copyright {
+    font-size: 0.7rem;
+    text-align: center;
+    background-color: #0f1111;
+    padding: 5px;
+    color: white;
+}
